@@ -50,4 +50,6 @@ nav ul a:hover {color: #000; transition: .4s;}
 .cbtn1:hover {background-color: black; transition: .2s;}
 .cbtn:hover {background-color: black; transition: .2s;}
 
-#master {width: 1126px; height: 700px; margin: 0 auto; background-color: lightblue; text-align: center; padding-top: 50px;}
+#master {width: 1126px; height: 800px; margin: 0 auto; background-color: lightblue; text-align: center; padding-top: 50px;}
+.master_img {width: 335px; height: 450px; margin: 20px; background-color: pink; float: left;}
+.master_img:hover {box-shadow: 10px 10px skyblue; transition: .4s;}
