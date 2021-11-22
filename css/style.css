@@ -33,18 +33,18 @@ nav ul a:hover {color: #000; transition: .4s;}
 .content_1 {width: 1126px; height: 300px; margin: 0 auto;}
 .c1_text {float: right; width: 563px; height: 300px; text-align: right; padding-top: 60px; padding-right: 170px; transform: translateX(100px); transition: all 2s; opacity: 0;}
 .content_1 img {width: 563px; height: 300px; float: right; transform: translateX(-100px); transition: all 2s; opacity: 0;}
-.content_1 img:hover {box-shadow: 10px 10px skyblue; transition: .4s;}
+.content_1 img:hover {box-shadow: 10px 10px skyblue; transition: .2s;}
 
 
 .content_2 {width: 1126px; height: 300px; margin: 0 auto; text-align: left;}
-.content_2 img {width: 523px; height: 300px; float: left; transform: translateX(100px); transition: 2s; opacity: 0;}
+.content_2 img {width: 523px; height: 300px; float: left; transform: translateX(100px); transition: all 2s; opacity: 0;}
 .c2_text {float: left; width: 600px; height: 300px; text-align: left; padding-top: 60px; padding-left: 130px; transform: translateX(-100px); transition: all 2s; opacity: 0;}
-.content_2 img:hover {box-shadow: 10px 10px skyblue; transition: .4s; transform: translateX(100px); transition: all 2s; opacity: 0;}
+.content_2 img:hover {box-shadow: 10px 10px skyblue; transition: .2s;}
 
 .content_3 {width: 1126px; height: 300px; margin: 0 auto; text-align: right;}
 .content_3 img {width: 563px; height: 300px; float: right; transform: translateX(-100px); transition: all 2s; opacity: 0;}
 .c3_text {float: right; width: 563px; height: 300px; text-align: right; padding-top: 60px; padding-right: 170px; transform: translateX(100px); transition: all 2s; opacity: 0;}
-.content_3 img:hover {box-shadow: 10px 10px skyblue; transition: .4s;}
+.content_3 img:hover {box-shadow: 10px 10px skyblue; transition: .2s;}
 
 .cbtn {width: 150px; height: 40px; background-color: #35C5EF; float: right; border-radius: 25px; text-align: center; color: #fff; font-weight: bold; padding-top: 8px;}
 .cbtn1 {width: 150px; height: 40px; background-color: #35C5EF; float: left; border-radius: 25px; text-align: center; color: #fff; font-weight: bold; padding-top: 8px;}
