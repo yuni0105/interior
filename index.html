@@ -7,12 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>오늘의집</title>
 
+    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="img\house.png" rel="shortcut icon" type="image/x-icon">
 
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
 
     <script>
+
         $(function () {
             $(window).scroll(function () {
 
@@ -21,52 +23,54 @@
                 // 환영
 
                 if (ws > 100) {
-
                     $('#welcome').css("transform", "translateY(0px)").css("opacity", "1");
-
                 }
 
                 // content_1
 
                 if (ws > 250) {
-
                     $('.content_1 img').css("transform", "translateX(0px)").css("opacity", "1");
-
                 }
 
                 if (ws > 400) {
-
                     $('.c1_text').css("transform", "translateX(0px)").css("opacity", "1");
-
                 }
 
                 // content_2
 
                 if (ws > 700) {
-
                     $('.c2_text').css("transform", "translateX(0px)").css("opacity", "1");
-                        $('.content_2 img').css("transform", "translateX(0px)").css("opacity", "1");
-
+                    $('.content_2 img').css("transform", "translateX(0px)").css("opacity", "1");
                 }
 
                 // content_3
 
 
                 if (ws > 800) {
-
                     $('.content_3 img').css("transform", "translateX(0px)").css("opacity", "1");
-
                 }
                 if (ws > 950) {
-
                     $('.c3_text').css("transform", "translateX(0px)").css("opacity", "1");
-
                 }
 
+                if (ws > 950) {
+                    $('.c3_text').css("transform", "translateX(0px)").css("opacity", "1");
+                }
 
+                if (ws > 1150) {
+                    $('#master').css("transform", "translateY(0px)").css("opacity", "1");
+                }
+
+                if (ws > 1350) {
+                    $('.master_img img').css("transform", "translateY(0px)").css("opacity", "1");
+                }
+
+                if (ws > 1950) {
+                    $('.master_text').css("transform", "translateY(0px)").css("opacity", "1");
+                }
             });
-
         });
+
     </script>
 </head>
 
@@ -100,7 +104,7 @@
         </div>
 
         <div id="content">
-            <div class="content_1"><img src="img/1.webp" alt="c1">
+            <div class="content_1"><img src="img/one.webp" alt="c1">
                 <div class="c1_text">
                     <h2>프로 자취러의 맥시멀 스타일링</h2>
                     <br>
@@ -113,7 +117,7 @@
                     </a>
                 </div>
             </div>
-            <div class="content_2"><img src="img/2.webp" alt="c2">
+            <div class="content_2"><img src="img/two.webp" alt="c2">
                 <div class="c2_text">
                     <h2>그림 같은 단독주택</h2>
                     <br>
@@ -126,7 +130,7 @@
                     </a>
                 </div>
             </div>
-            <div class="content_3"><img src="img/3.webp" alt="c3">
+            <div class="content_3"><img src="img/three.webp" alt="c3">
                 <div class="c3_text">
                     <h2>깔끔하게 리모델링한 주상복합</h2>
                     <br>
@@ -145,16 +149,92 @@
             <h2>전문가 소개</h2>
             <br>
             <p>맞춤적으로 인테리어 서비스를 진행하는 TOP3 전문가를 소개합니다.</p>
-            <div class="master_img"></div>
-            <div class="master_img"></div>
-            <div class="master_img"></div>
+        </div>
+        <div id="master_background">
+            <div class="master_img_box">
+                <div class="master_img"><img src="img/art.jpg" alt="art"></div>
+                <div class="master_img"><img src="img/raum.jpg" alt="raum"></div>
+                <div class="master_img"><img src="img/melo.jpg" alt="melo"></div>
+
+                <div class="master_text">
+                    <h3>알트디자인</h3>
+                    <br>
+                    <p>안녕하세요~ 알트디자인 신소장입니다.
+                        디자인은 고객의 요구를 충족시키며, 예산을 만족시키는 작업입니다~
+                        알트디자인은 항상 최상의 결과를 위해 노력합니다.</p>
+                    <div class="master_round"><img src="img/twitter.png" alt="twitter"></div>
+                    <div class="master_round"><img src="img/instagram.png" alt="instagram"></div>
+                    <div class="master_round"><img src="img/facebook.png" alt="facebook"></div>
+                </div>
+                <div class="master_text">
+                    <h3>라움디자인</h3>
+                    <br>
+                    <p>디자이너의 풍부한 경험과 노하우를 바탕으로 새로운 디자인 트랜드 형성에 노력할 것입니다.
+                        특히 서울, 경기, 인천권 상업, 주거 인테리어에 주력하고 있습니다.</p>
+                    <div class="master_round"><img src="img/twitter.png" alt="twitter"></div>
+                    <div class="master_round"><img src="img/instagram.png" alt="instagram"></div>
+                    <div class="master_round"><img src="img/facebook.png" alt="facebook"></div>
+                </div>
+
+                <div class="master_text">
+                    <h3>멜로맨스디자인</h3>
+                    <br>
+                    <p>커뮤니케이션을 통한 클라이언트에 이해를 바탕으로 획일화된 디자인 공간이 아닌 편안하고 개성있는 공간으로 실현될 수 있도록 최선을 다하겠습니다.</p>
+                    <div class="master_round"><img src="img/twitter.png" alt="twitter"></div>
+                    <div class="master_round"><img src="img/instagram.png" alt="instagram"></div>
+                    <div class="master_round"><img src="img/facebook.png" alt="facebook"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="review"><img src="img/w.png"><br>
+            <br>
+            <h2>유저들의 인테리어 시공리뷰</h2>
+        </div>
+        <div class="review_box">
+            <div class="review_text">
+                <p>★★★★★</p>
+                <br>
+                <p>오늘의 집을 통해 여러군데 상담 신청했었는데 응답 속도가 가장 빨랐어요! 견적받고 세부 내용 및 금액에 대해서도 애매하게 얘기하지 않고 정확하게 말씀해주셔서 ...</p>
+            </div>
+            <div class="review_text">
+                <p>★★★★★</p>
+                <br>
+                <p>스타일부터 자재까지 직접 고를수있어서 매우좋았습니다. 설계부터시공이 끝날때까지 지속적으로 매일매일 피드백해주신 부분 또한 좋았으며, 결재내역 공개로 매...</p>
+            </div>
+            <div class="review_text">
+                <p>★★★★★</p>
+                <br>
+                <p>처음 해보는 인테리어였는데 좋은 사장님 만나서 예쁜집 만들 수 있었던 것 같아요! 진솔하고 꼼꼼하시고 책임감 있으시고... 특히 제가 후드일체형인덕션이라는 까다...</p>
+            </div>
+            <div class="review_img"><a href="#"><img src="img/first.jpeg"></a><br><br>
+                <h3>디자인스토리</h3>
+            </div>
+            <div class="review_img"><a href="#"><img src="img/second.jpeg"></a><br><br>
+                <h3>더라이브러리</h3>
+            </div>
+            <div class="review_img"><a href="#"><img src="img/thrid.jpeg"></a><br><br>
+                <h3>DOODEE 두디</h3>
+            </div>
+        </div>
+
+        <div id="gallery"><img src="img/w.png"><br><h2>인테리어 갤러리</h2></div>
+            <div class="gallery_section_img"><img src="img/1.webp" alt="g1"></div>
+            <div class="gallery_section_img"><img src="img/2.webp" alt="g2"></div>
+            <div class="gallery_section_img"><img src="img/3.webp" alt="g3"></div>
+            <div class="gallery_section_img"><img src="img/4.webp" alt="g4"></div>
+            <div class="gallery_section_img"><img src="img/5.webp" alt="g5"></div>
+            <div class="gallery_section_img"><img src="img/6.webp" alt="g6"></div>
+            <div class="gallery_section_img"><img src="img/7.webp" alt="g7"></div>
+            <div class="gallery_section_img"><img src="img/8.webp" alt="g8"></div>
+            <div class="gallery_section_img"><img src="img/9.gif" alt="g9"></div>
+            <div class="gallery_section_img"><img src="img/10.webp" alt="g10"></div>
+            <div class="gallery_section_img"><img src="img/11.webp" alt="g11"></div>
+            <div class="gallery_section_img"><img src="img/12.webp" alt="g12"></div>
         </div>
         <footer>
-
-
-
+            <div></div>
         </footer>
-    </div>
 </body>
 
 </html>
