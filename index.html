@@ -21,31 +21,25 @@
                 var ws = $(this).scrollTop();
 
                 // 환영
-
                 if (ws > 100) {
                     $('#welcome').css("transform", "translateY(0px)").css("opacity", "1");
                 }
 
                 // content_1
-
                 if (ws > 250) {
                     $('.content_1 img').css("transform", "translateX(0px)").css("opacity", "1");
                 }
-
                 if (ws > 400) {
                     $('.c1_text').css("transform", "translateX(0px)").css("opacity", "1");
                 }
 
                 // content_2
-
                 if (ws > 700) {
                     $('.c2_text').css("transform", "translateX(0px)").css("opacity", "1");
                     $('.content_2 img').css("transform", "translateX(0px)").css("opacity", "1");
                 }
 
                 // content_3
-
-
                 if (ws > 800) {
                     $('.content_3 img').css("transform", "translateX(0px)").css("opacity", "1");
                 }
@@ -57,6 +51,7 @@
                     $('.c3_text').css("transform", "translateX(0px)").css("opacity", "1");
                 }
 
+                // master
                 if (ws > 1150) {
                     $('#master').css("transform", "translateY(0px)").css("opacity", "1");
                 }
@@ -68,10 +63,52 @@
                 if (ws > 1950) {
                     $('.master_text').css("transform", "translateY(0px)").css("opacity", "1");
                 }
+
+                //quetion
+                if (ws > 2150) {
+                    $('#quetion').css("transform", "translateY(0px)").css("opacity", "1");
+                }
+                if (ws > 2450) {
+                    $('.quetion_box').css("transform", "translateY(0px)").css("opacity", "1");
+                }
+                //quetion
+                if (ws > 2750) {
+                    $('#review').css("transform", "translateY(0px)").css("opacity", "1");
+                }
+                if (ws > 3050) {
+                    $('#review_background').css("transform", "translateY(0px)").css("opacity", "1");
+                }
             });
         });
 
+        $(document).ready(function () {
+      $(".quetion_btn1").click(function () {
+        $(".quetion_a1").slideToggle()
+        $(".quetion_a2").hide()
+        $(".quetion_a3").hide()
+        $(".quetion_a4").hide()
+      });
+      $(".quetion_btn2").click(function () {
+        $(".quetion_a2").slideToggle()
+        $(".quetion_a1").hide()
+        $(".quetion_a3").hide()
+        $(".quetion_a4").hide()
+      });
+      $(".quetion_btn3").click(function () {
+        $(".quetion_a3").slideToggle()
+        $(".quetion_a2").hide()
+        $(".quetion_a1").hide()
+        $(".quetion_a4").hide()
+      });
+      $(".quetion_btn4").click(function () {
+        $(".quetion_a4").slideToggle()
+        $(".quetion_a2").hide()
+        $(".quetion_a3").hide()
+        $(".quetion_a1").hide()
+      });
+    });
     </script>
+
 </head>
 
 <body>
@@ -97,7 +134,7 @@
         </div>
 
         <div id="welcome"><img src="img/w.png" alt="w">
-            <h2>예쁜템들이 모여사는 오늘의집에<br>
+            <h2>예쁜템들 모여사는 오늘의집에<br>
                 오신 것을 환영합니다</h2>
             <br>
             <p>다양한 집들이, 스토어, 커뮤니티 등 콘텐츠가 마련되어 있습니다.</p>
@@ -187,10 +224,31 @@
             </div>
         </div>
 
-        <div id="review"><img src="img/w.png"><br>
+        <div id="quetion"><img src="img/w.png"><br>
+            <br>
+            <h2>유저들의 질문</h2>
+            <br>
+            <p>오늘의집 인테리어 고수들과 전문가들에게 조언을 받아보세요.</p>
+        </div>
+        <div class="quetion_box">
+            <div class="quetion_text">
+                <div class="quetion_btn1"><h3>지금은 올 화이트로 사용 중인데 아이보리 원목우로 교체 하고싶은데 교체 할까요?</h3></div>
+                <div class="quetion_a1"><p>와 저 디자인 옛날에 제가 사고 싶었던 건데 제가 쓰던 건 상단은 똑같고 하단은 서랍장이 아니라 그냥 디귿자라서 서랍형으로 된게 나중엔 너무 갖고 싶더라구여 공간이 부족해서 ㅜ 암튼 저는 개인적으로 지금 제품이 더 좋은 것 같은데 바꾸고 싶으면 마음이 가는 대로 해야 하는 것 같아용 ㅎㅎ</p></div>
+                <div class="quetion_btn2"><h3>벽에 붙여서 사용할건데, 헤드 없는 소파는 많이 불편할까요?</h3></div>
+                <div class="quetion_a2"><p>상황에 따라서도 달라질거 같네요. 하지만 일반적으로 헤드가 없는 쇼파는 불편하기는 합니다. 헤드가 낮아도 불편하고요. 특별한 상황이 아니라면 되도록 헤드가 있는 쇼파를 구입하시는게 좋습니다.</p></div>
+                <div class="quetion_btn3"><h3>커튼을 설치하려 하는데 창 부분만 설치해야 하나요 아니면 벽전체를 하는게 이쁠까요?</h3></div>
+                <div class="quetion_a3"><p>거실이 아니라 침실 작은 방으로 보이네요. 침대 등 가구가 사진 왼쪽 부분인 창문 좌측에 들어간다면 창 크기 만큼 커튼을 달아주시는 걸 벽면의 콘센트 활용이 수월해 권해드려요. 
+                    벽면 콘센트를 쓰지 않으실 것 같은 경우에는 전체 벽면으로 가려주시는 것도 좋습니다.</p></div>
+                <div class="quetion_btn4"><h3>작은방에 타일카페트를 깔려고 하는데..  이물질이나 먼지나 털빠짐 현상이 일어나진 않을까요?</h3></div>
+                <div class="quetion_a4"><p>먼지는 많이 묻고 먼지 제거가 쉽지는 않습니다. 카페트 타일을 깔고 생활하시려면 흡입력이 강한 유선 청소기를 사용하시는게 더 좋다고 생각합니다.</p></div>
+            </div>
+            <img src="img/quetion.webp"></div>
+
+        <div id="review"><img src="img/w.png" alt="w"><br>
             <br>
             <h2>유저들의 인테리어 시공리뷰</h2>
         </div>
+        <div id="review_background">
         <div class="review_box">
             <div class="review_text">
                 <p>★★★★★</p>
@@ -207,34 +265,79 @@
                 <br>
                 <p>처음 해보는 인테리어였는데 좋은 사장님 만나서 예쁜집 만들 수 있었던 것 같아요! 진솔하고 꼼꼼하시고 책임감 있으시고... 특히 제가 후드일체형인덕션이라는 까다...</p>
             </div>
-            <div class="review_img"><a href="#"><img src="img/first.jpeg"></a><br><br>
+            <div class="review_img"><img src="img/first.jpeg" alt="first"><br><br>
                 <h3>디자인스토리</h3>
             </div>
-            <div class="review_img"><a href="#"><img src="img/second.jpeg"></a><br><br>
+            <div class="review_img"><img src="img/second.jpeg" alt="second"><br><br>
                 <h3>더라이브러리</h3>
             </div>
-            <div class="review_img"><a href="#"><img src="img/thrid.jpeg"></a><br><br>
+            <div class="review_img"><img src="img/thrid.jpeg" alt="thrid"><br><br>
                 <h3>DOODEE 두디</h3>
             </div>
         </div>
+    </div>
 
-        <div id="gallery"><img src="img/w.png"><br><h2>인테리어 갤러리</h2></div>
-            <div class="gallery_section_img"><img src="img/1.webp" alt="g1"></div>
-            <div class="gallery_section_img"><img src="img/2.webp" alt="g2"></div>
-            <div class="gallery_section_img"><img src="img/3.webp" alt="g3"></div>
-            <div class="gallery_section_img"><img src="img/4.webp" alt="g4"></div>
-            <div class="gallery_section_img"><img src="img/5.webp" alt="g5"></div>
-            <div class="gallery_section_img"><img src="img/6.webp" alt="g6"></div>
-            <div class="gallery_section_img"><img src="img/7.webp" alt="g7"></div>
-            <div class="gallery_section_img"><img src="img/8.webp" alt="g8"></div>
-            <div class="gallery_section_img"><img src="img/9.gif" alt="g9"></div>
-            <div class="gallery_section_img"><img src="img/10.webp" alt="g10"></div>
-            <div class="gallery_section_img"><img src="img/11.webp" alt="g11"></div>
-            <div class="gallery_section_img"><img src="img/12.webp" alt="g12"></div>
+        <div id="gallery"><img src="img/w.png"><br><br>
+            <h2>인테리어 갤러리</h2>
         </div>
-        <footer>
-            <div></div>
-        </footer>
+        
+        <div id="gallery_seciton">
+        <div class="gallery_img"><img src="img/1.webp" alt="g1"></div>
+        <div class="gallery_img"><img src="img/2.webp" alt="g2"></div>
+        <div class="gallery_img"><img src="img/3.webp" alt="g3"></div>
+        <div class="gallery_img"><img src="img/4.webp" alt="g4"></div>
+        <div class="gallery_img"><img src="img/5.webp" alt="g5"></div>
+        <div class="gallery_img"><img src="img/6.webp" alt="g6"></div>
+        <div class="gallery_img"><img src="img/7.webp" alt="g7"></div>
+        <div class="gallery_img"><img src="img/8.webp" alt="g8"></div>
+        <div class="gallery_img"><img src="img/9.gif" alt="g9"></div>
+        <div class="gallery_img"><img src="img/10.webp" alt="g10"></div>
+        <div class="gallery_img"><img src="img/11.webp" alt="g11"></div>
+        <div class="gallery_img"><img src="img/12.webp" alt="g12"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="foot_box">
+            <div class="about">
+                <p class="white">고객센터</p>
+                <br>
+                <p>오늘의집은 오프라인 중심의 시공 산업을 온라인으로 확장해 고객과 전문가가 서로 신뢰할 수 있는 시장 구조를 만드는 데 앞장서고 있습니다.</p>
+            </div>
+            <div class="quick">
+                <p class="white">빠른 메뉴</p>
+                <br>
+                <p>브랜드 스토리</p>
+                <br>
+                <p>회사소개</p>
+                <br>
+                <p>채용정보</p>
+                <br>
+                <p>이용약관</p>
+                <br>
+                <p>개인정보처리방침</p>
+                <br>
+                <p>공지사항</p>
+            </div>
+            <div class="follow">
+                <p class="white">SNS 계정</p>
+                <br>
+                <img src="img/t.png" alt="t">
+                <img src="img/f.png" alt="f">
+                <img src="img/i.png" alt="i">
+            </div>
+            <div class="email">
+                <p class="white">이메일 구독</p>
+                <br>
+            <input id=email placeholder="Enter Email">
+            <div class="send">Send</div>
+            </div>
+            <div id="foot_box_c"><hr><br>
+                <br>
+            <p>Copyright 2014. bucketplace, Co., Ltd. All rights reserved</p></div>
+        </div>
+
+    </footer>
 </body>
 
 </html>
