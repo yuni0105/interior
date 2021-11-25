@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link href="img\house.png" rel="shortcut icon" type="image/x-icon">
 
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
@@ -64,14 +65,14 @@
                     $('.master_text').css("transform", "translateY(0px)").css("opacity", "1");
                 }
 
-                //quetion
+                // quetion
                 if (ws > 2150) {
                     $('#quetion').css("transform", "translateY(0px)").css("opacity", "1");
                 }
                 if (ws > 2450) {
                     $('.quetion_box').css("transform", "translateY(0px)").css("opacity", "1");
                 }
-                //quetion
+                // review
                 if (ws > 2750) {
                     $('#review').css("transform", "translateY(0px)").css("opacity", "1");
                 }
@@ -84,27 +85,36 @@
         $(document).ready(function () {
       $(".quetion_btn1").click(function () {
         $(".quetion_a1").slideToggle()
-        $(".quetion_a2").hide()
-        $(".quetion_a3").hide()
-        $(".quetion_a4").hide()
+        $(".quetion_a2").slideUp()
+        $(".quetion_a3").slideUp()
+        $(".quetion_a4").slideUp()
       });
       $(".quetion_btn2").click(function () {
         $(".quetion_a2").slideToggle()
-        $(".quetion_a1").hide()
-        $(".quetion_a3").hide()
-        $(".quetion_a4").hide()
+        $(".quetion_a1").slideUp()
+        $(".quetion_a3").slideUp()
+        $(".quetion_a4").slideUp()
       });
       $(".quetion_btn3").click(function () {
         $(".quetion_a3").slideToggle()
-        $(".quetion_a2").hide()
-        $(".quetion_a1").hide()
-        $(".quetion_a4").hide()
+        $(".quetion_a2").slideUp()
+        $(".quetion_a1").slideUp()
+        $(".quetion_a4").slideUp()
       });
       $(".quetion_btn4").click(function () {
         $(".quetion_a4").slideToggle()
-        $(".quetion_a2").hide()
-        $(".quetion_a3").hide()
-        $(".quetion_a1").hide()
+        $(".quetion_a2").slideUp()
+        $(".quetion_a3").slideUp()
+        $(".quetion_a1").slideUp()
+      });
+    });
+
+    $(document).ready(function () {
+      $(".list").click(function () {
+        $("#menu").show()
+    });
+      $(".cancel").click(function () {
+        $("#menu").hide()
       });
     });
     </script>
@@ -113,9 +123,22 @@
 
 <body>
     <div id="wrap">
+        <div id="menu">
+            <div class="cancel"><img src="img/cancle.png" style="width: 48px; height: 48px;"></div>
+            <nav>
+            <ul>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">인테리어</a></li>
+                <li><a href="#">커뮤니티</a></li>
+                <li><a href="#">스토어</a></li>
+                <li><a href="#">Home</a></li>
+            </ul>
+        </nav>
+        </div>
         <header>
             <div class="logo"><a href="index.html">오늘의집</a></div>
-            <nav>
+            <img src="img/list.png" class="list">
+            <nav class="b">
                 <ul>
                     <li><a href="#">이벤트</a></li>
                     <li><a href="#">인테리어</a></li>
@@ -250,18 +273,23 @@
         </div>
         <div id="review_background">
         <div class="review_box">
-            <div class="review_text">
+            <div class="review_text1">
                 <p>★★★★★</p>
                 <br>
                 <p>오늘의 집을 통해 여러군데 상담 신청했었는데 응답 속도가 가장 빨랐어요! 견적받고 세부 내용 및 금액에 대해서도 애매하게 얘기하지 않고 정확하게 말씀해주셔서 ...</p>
             </div>
-            <div class="review_text">
+            <div class="review_text2">
                 <p>★★★★★</p>
                 <br>
                 <p>스타일부터 자재까지 직접 고를수있어서 매우좋았습니다. 설계부터시공이 끝날때까지 지속적으로 매일매일 피드백해주신 부분 또한 좋았으며, 결재내역 공개로 매...</p>
             </div>
-            <div class="review_text">
+            <div class="review_text3">
                 <p>★★★★★</p>
+                <br>
+                <p>처음 해보는 인테리어였는데 좋은 사장님 만나서 예쁜집 만들 수 있었던 것 같아요! 진솔하고 꼼꼼하시고 책임감 있으시고... 특히 제가 후드일체형인덕션이라는 까다...</p>
+            </div>
+            <div class="review_text4">
+                <p>★★★</p>
                 <br>
                 <p>처음 해보는 인테리어였는데 좋은 사장님 만나서 예쁜집 만들 수 있었던 것 같아요! 진솔하고 꼼꼼하시고 책임감 있으시고... 특히 제가 후드일체형인덕션이라는 까다...</p>
             </div>
@@ -273,6 +301,10 @@
             </div>
             <div class="review_img"><img src="img/thrid.jpeg" alt="thrid"><br><br>
                 <h3>DOODEE 두디</h3>
+            </div>
+            <div class="review_btn_box">
+                <div class="review_left"><img src="img/left.png"></div>
+                <div class="review_right"><img src="img/right.png"></div>
             </div>
         </div>
     </div>
@@ -300,7 +332,7 @@
     <footer>
         <div id="foot_box">
             <div class="about">
-                <p class="white">고객센터</p>
+                <p class="white">더 관한 정보</p>
                 <br>
                 <p>오늘의집은 오프라인 중심의 시공 산업을 온라인으로 확장해 고객과 전문가가 서로 신뢰할 수 있는 시장 구조를 만드는 데 앞장서고 있습니다.</p>
             </div>
