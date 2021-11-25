@@ -55,7 +55,7 @@ color: #666; padding-top: 75px;}
     #foot_box {padding-top: 125px; width: 1126px; height: 420px;margin: 0 auto; display: block;}
     
     .about {width: 300px; height: 150px; float: left; color: #666; margin-right: 100px;}
-    .quick {width: 200px; height: 300px; float: left; color:#666; margin-right: 100px;}
+    .quick {width: 200px; height: 300px; float: left; color:#666; margin-right: 45px;}
     .quick p:hover {color: #fff; transition: .4s; cursor: pointer;}
     
     .follow {width: 100px; height: 100px; float: left; color: #666; margin-right: 20px;}
