@@ -14,7 +14,7 @@ header {display:flex;  justify-content:space-between; align-items:center;}
 
 .b {display: none;}
 
-nav {width:auto; height:auto; float:right; padding-top: 13px; overflow: hidden;}
+nav {width:auto; height:auto; float:right; padding-top: 13px;}
 nav ul {display:flex; flex-direction:column;}
 nav ul li a {color: #333; display: block;}
 nav ul a:hover {color: #000; transition: .4s;}
