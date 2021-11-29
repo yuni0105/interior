@@ -13,114 +13,7 @@
     <link href="img\house.png" rel="shortcut icon" type="image/x-icon">
 
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
-
-    <script>
-
-        $(function () {
-            $(window).scroll(function () {
-
-                var ws = $(this).scrollTop();
-
-                // 환영
-                if (ws > 100) {
-                    $('#welcome').css("transform", "translateY(0px)").css("opacity", "1");
-                }
-
-                // content_1
-                if (ws > 250) {
-                    $('.content_1 img').css("transform", "translateX(0px)").css("opacity", "1");
-                }
-                if (ws > 400) {
-                    $('.c1_text').css("transform", "translateX(0px)").css("opacity", "1");
-                }
-
-                // content_2
-                if (ws > 700) {
-                    $('.c2_text').css("transform", "translateX(0px)").css("opacity", "1");
-                    $('.content_2 img').css("transform", "translateX(0px)").css("opacity", "1");
-                }
-
-                // content_3
-                if (ws > 800) {
-                    $('.content_3 img').css("transform", "translateX(0px)").css("opacity", "1");
-                }
-                if (ws > 950) {
-                    $('.c3_text').css("transform", "translateX(0px)").css("opacity", "1");
-                }
-
-                if (ws > 950) {
-                    $('.c3_text').css("transform", "translateX(0px)").css("opacity", "1");
-                }
-
-                // master
-                if (ws > 1150) {
-                    $('#master').css("transform", "translateY(0px)").css("opacity", "1");
-                }
-
-                if (ws > 1350) {
-                    $('.master_img img').css("transform", "translateY(0px)").css("opacity", "1");
-                }
-
-                if (ws > 1950) {
-                    $('.master_text').css("transform", "translateY(0px)").css("opacity", "1");
-                }
-
-                // quetion
-                if (ws > 2150) {
-                    $('#quetion').css("transform", "translateY(0px)").css("opacity", "1");
-                }
-                if (ws > 2450) {
-                    $('.quetion_box').css("transform", "translateY(0px)").css("opacity", "1");
-                }
-                // review
-                if (ws > 2750) {
-                    $('#review').css("transform", "translateY(0px)").css("opacity", "1");
-                }
-                if (ws > 3050) {
-                    $('.review_text1').css("transform", "translateY(0px)").css("opacity", "1");
-                    $('.review_text2').css("transform", "translateY(0px)").css("opacity", "1");
-                    $('.review_text3').css("transform", "translateY(0px)").css("opacity", "1");
-                    $('.review_img').css("transform", "translateY(0px)").css("opacity", "1");
-                }
-            });
-        });
-
-        $(document).ready(function () {
-            $(".quetion_btn1").click(function () {
-                $(".quetion_a1").slideToggle()
-                $(".quetion_a2").slideUp()
-                $(".quetion_a3").slideUp()
-                $(".quetion_a4").slideUp()
-            });
-            $(".quetion_btn2").click(function () {
-                $(".quetion_a2").slideToggle()
-                $(".quetion_a1").slideUp()
-                $(".quetion_a3").slideUp()
-                $(".quetion_a4").slideUp()
-            });
-            $(".quetion_btn3").click(function () {
-                $(".quetion_a3").slideToggle()
-                $(".quetion_a2").slideUp()
-                $(".quetion_a1").slideUp()
-                $(".quetion_a4").slideUp()
-            });
-            $(".quetion_btn4").click(function () {
-                $(".quetion_a4").slideToggle()
-                $(".quetion_a2").slideUp()
-                $(".quetion_a3").slideUp()
-                $(".quetion_a1").slideUp()
-            });
-        });
-
-        $(document).ready(function () {
-            $(".list").click(function () {
-                $("#menu").fadeIn()
-            });
-            $(".cancel").click(function () {
-                $("#menu").fadeOut()
-            });
-        });
-    </script>
+    <script src="js/main.js"></script>
 
 </head>
 
@@ -301,106 +194,126 @@
             <br>
             <h2>유저들의 인테리어 시공리뷰</h2>
         </div>
+
         <div id="review_background">
-            <div class="review_box">
-                <div class="review_text1">
-                    <p>★★★★★</p>
+            <ul class="review_box">
+                <li>
+                    <div class="review_text1">
+                        <p>★★★★★</p>
+                        <br>
+                        <p>오늘의 집을 통해 여러군데 상담 신청했었는데 응답 속도가 가장 빨랐어요! 견적받고 세부 내용 및 금액에 대해서도 애매하게 얘기하지 않고 정확하게 말씀해주셔서 ...
+                        </p>
+                    </div>
+                    <img src="img/first.jpeg" alt="first">
                     <br>
-                    <p>오늘의 집을 통해 여러군데 상담 신청했었는데 응답 속도가 가장 빨랐어요! 견적받고 세부 내용 및 금액에 대해서도 애매하게 얘기하지 않고 정확하게 말씀해주셔서 ...</p>
-                </div>
-                <div class="review_text2">
-                    <p>★★★★★</p>
                     <br>
-                    <p>스타일부터 자재까지 직접 고를수있어서 매우좋았습니다. 설계부터시공이 끝날때까지 지속적으로 매일매일 피드백해주신 부분 또한 좋았으며, 결재내역 공개로 매...</p>
-                </div>
-                <div class="review_text3">
-                    <p>★★★★★</p>
-                    <br>
-                    <p>처음 해보는 인테리어였는데 좋은 사장님 만나서 예쁜집 만들 수 있었던 것 같아요! 진솔하고 꼼꼼하시고 책임감 있으시고... 특히 제가 후드일체형인덕션이라는 까다...</p>
-                </div>
-                <div class="review_text4">
-                    <p>★★★</p>
-                    <br>
-                    <p>처음 해보는 인테리어였는데 좋은 사장님 만나서 예쁜집 만들 수 있었던 것 같아요! 진솔하고 꼼꼼하시고 책임감 있으시고... 특히 제가 후드일체형인덕션이라는 까다...</p>
-                </div>
-                <div class="review_img"><img src="img/first.jpeg" alt="first"><br><br>
                     <h3>디자인스토리</h3>
-                </div>
-                <div class="review_img"><img src="img/second.jpeg" alt="second"><br><br>
+                </li>
+
+                <li>
+                    <div class="review_text2">
+                        <p>★★★★★</p>
+                        <br>
+                        <p>스타일부터 자재까지 직접 고를수있어서 매우좋았습니다. 설계부터시공이 끝날때까지 지속적으로 매일매일 피드백해주신 부분 또한 좋았으며, 결재내역 공개로 매...</p>
+                    </div>
+                    <img src="img/second.jpeg" alt="second">
+                    <br>
+                    <br>
                     <h3>더라이브러리</h3>
-                </div>
-                <div class="review_img"><img src="img/thrid.jpeg" alt="thrid"><br><br>
+                </li>
+
+                <li>
+                    <div class="review_text3">
+                        <p>★★★★★</p>
+                        <br>
+                        <p>처음 해보는 인테리어였는데 좋은 사장님 만나서 예쁜집 만들 수 있었던 것 같아요! 진솔하고 꼼꼼하시고 책임감 있으시고... 특히 제가 후드일체형인덕션이라는 까다...
+                        </p>
+                    </div>
+                    <img src="img/thrid.jpeg" alt="thrid">
+                    <br>
+                    <br>
                     <h3>DOODEE 두디</h3>
-                </div>
-                <div class="review_btn_box">
-                    <div class="review_left"><img src="img/left.png"></div>
-                    <div class="review_right"><img src="img/right.png"></div>
-                </div>
-            </div>
-        </div>
-            <div id="gallery"><img src="img/w.png"><br><br>
-                <h2>인테리어 갤러리</h2>
-            </div>
+                </li>
 
-            <div id="gallery_seciton">
-                <div class="gallery_img"><img src="img/1.jpeg" alt="g1"></div>
-                <div class="gallery_img"><img src="img/2.jpeg" alt="g2"></div>
-                <div class="gallery_img"><img src="img/3.jpeg" alt="g3"></div>
-                <div class="gallery_img"><img src="img/4.jpeg" alt="g4"></div>
-                <div class="gallery_img"><img src="img/5.jpeg" alt="g5"></div>
-                <div class="gallery_img"><img src="img/6.jpeg" alt="g6"></div>
-                <div class="gallery_img"><img src="img/7.jpeg" alt="g7"></div>
-                <div class="gallery_img"><img src="img/8.jpeg" alt="g8"></div>
-                <div class="gallery_img"><img src="img/9.jpeg" alt="g9"></div>
-                <div class="gallery_img"><img src="img/10.jpeg" alt="g10"></div>
-                <div class="gallery_img"><img src="img/11.JPG" alt="g11"></div>
-                <div class="gallery_img"><img src="img/12.jpeg" alt="g12"></div>
+                <li>
+                    <div class="review_text4">
+                        <p>★★★</p>
+                        <br>
+                        <p>처음 해보는 인테리어였는데 좋은 사장님 만나서 예쁜집 만들 수 있었던 것 같아요! 진솔하고 꼼꼼하시고 책임감 있으시고... 특히 제가 후드일체형인덕션이라는 까다...
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <div class="review_btn_box">
+                <div class="review_left"><img src="img/left.png"></div>
+                <div class="review_right"><img src="img/right.png"></div>
             </div>
         </div>
 
-        <footer>
-            <div id="foot_box">
-                <div class="about">
-                    <p class="white">더 관한 정보</p>
-                    <br>
-                    <p>오늘의집은 오프라인 중심의 시공 산업을 온라인으로 확장해 고객과 전문가가 서로 신뢰할 수 있는 시장 구조를 만드는 데 앞장서고 있습니다.</p>
-                </div>
-                <div class="quick">
-                    <p class="white">빠른 메뉴</p>
-                    <br>
-                    <p>브랜드 스토리</p>
-                    <br>
-                    <p>회사소개</p>
-                    <br>
-                    <p>채용정보</p>
-                    <br>
-                    <p>이용약관</p>
-                    <br>
-                    <p>개인정보처리방침</p>
-                    <br>
-                    <p>공지사항</p>
-                </div>
-                <div class="follow">
-                    <p class="white">SNS 계정</p>
-                    <br>
-                    <img src="img/t.png" alt="t">
-                    <img src="img/f.png" alt="f">
-                    <img src="img/i.png" alt="i">
-                </div>
-                <div class="email">
-                    <p class="white">이메일 구독</p>
-                    <br>
-                    <input id=email placeholder="Enter Email">
-                    <div class="send">Send</div>
-                </div>
-                <div id="foot_box_c">
-                    <hr><br>
-                    <br>
-                    <p>Copyright 2014. bucketplace, Co., Ltd. All rights reserved</p>
-                </div>
-            </div>
 
-        </footer>
+        <div id="gallery"><img src="img/w.png"><br><br>
+            <h2>인테리어 갤러리</h2>
+        </div>
+
+        <div id="gallery_seciton">
+            <div class="gallery_img"><a href="img/1.jpeg"><img src="img/1.jpeg" alt="g1"></a></div>
+            <div class="gallery_img"><a href="img/2.jpeg"><img src="img/2.jpeg" alt="g2"></a></div>
+            <div class="gallery_img"><a href="img/3.jpeg"><img src="img/3.jpeg" alt="g3"></a></div>
+            <div class="gallery_img"><a href="img/4.jpeg"><img src="img/4.jpeg" alt="g4"></a></div>
+            <div class="gallery_img"><a href="img/5.jpeg"><img src="img/5.jpeg" alt="g5"></a></div>
+            <div class="gallery_img"><a href="img/6.jpeg"><img src="img/6.jpeg" alt="g6"></a></div>
+            <div class="gallery_img"><a href="img/7.jpeg"><img src="img/7.jpeg" alt="g7"></a></div>
+            <div class="gallery_img"><a href="img/8.jpeg"><img src="img/8.jpeg" alt="g8"></a></div>
+            <div class="gallery_img"><a href="img/9.jpeg"><img src="img/9.jpeg" alt="g9"></a></div>
+            <div class="gallery_img"><a href="img/10.jpeg"><img src="img/10.jpeg" alt="g10"></a></div>
+            <div class="gallery_img"><a href="img/11.JPG"><img src="img/11.JPG" alt="g11"></a></div>
+            <div class="gallery_img"><a href="img/12.jpeg"><img src="img/12.jpeg" alt="g12"></a></div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="foot_box">
+            <div class="about">
+                <p class="white">더 관한 정보</p>
+                <br>
+                <p>오늘의집은 오프라인 중심의 시공 산업을 온라인으로 확장해 고객과 전문가가 서로 신뢰할 수 있는 시장 구조를 만드는 데 앞장서고 있습니다.</p>
+            </div>
+            <div class="quick">
+                <p class="white">빠른 메뉴</p>
+                <br>
+                <p>브랜드 스토리</p>
+                <br>
+                <p>회사소개</p>
+                <br>
+                <p>채용정보</p>
+                <br>
+                <p>이용약관</p>
+                <br>
+                <p>개인정보처리방침</p>
+                <br>
+                <p>공지사항</p>
+            </div>
+            <div class="follow">
+                <p class="white">SNS 계정</p>
+                <br>
+                <img src="img/t.png" alt="t">
+                <img src="img/f.png" alt="f">
+                <img src="img/i.png" alt="i">
+            </div>
+            <div class="email">
+                <p class="white">이메일 구독</p>
+                <br>
+                <input id=email placeholder="Enter Email">
+                <div class="send">전송</div>
+            </div>
+            <div id="foot_box_c">
+                <hr><br>
+                <br>
+                <p>Copyright 2014. bucketplace, Co., Ltd. All rights reserved</p>
+            </div>
+        </div>
+
+    </footer>
 </body>
 
 </html>
