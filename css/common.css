@@ -41,7 +41,7 @@ footer {padding-left: 10px; width: 100%; height: auto; margin: 0 auto; backgroun
 color: #666; padding-top: 75px;}
 }
 
-@media (min-width:768px){
+@media (min-width:1125px){
         header {width: 1126px; height: 80px; margin: 0 auto; padding-top: 15px;}
     
         .logo {float: left; font-family: "IM_Hyemin-Bold"; font-weight: bold; font-size: 30px; color: #000; padding-top: 5px;}
